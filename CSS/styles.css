@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-header{ 
+    background-image: url(../img/Jennie-background-mobile.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+
+
+@media screen and (min-width: 980px){
+    .main-header{ 
+        background-image: url(../img/BP-background2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        
+    }
+}
