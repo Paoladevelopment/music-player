@@ -1,26 +1,244 @@
-*{
-    margin: 0;
-    padding: 0;
+:root {
+  --primary-font-family: "Oswald";
+  --secundary-font-family: "Source Sans Pro";
 }
 
-.main-header{ 
-    background-image: url(../img/Jennie-background-mobile.jpeg);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font-family), sans-serif;
+  text-align: center;
+}
+
+.main-header {
+  background-image: url(../img/BP-background-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__info {
+  /* overflow: hidden;
+  overflow-wrap: break-word; */
+  min-width: 27.5rem;
+  max-width: 48.75rem;
+  width: 60%;
+  border: #b70956 solid 2px;
+  padding-bottom: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-header__info p {
+  color: #ffff;
+  font-size: 2.25rem;
+  display: inline-block;
+  margin-left: 1.75rem;
+}
+
+.main-header__info p:first-of-type {
+  margin-left: 0;
+}
+
+.main-header img {
+  margin-bottom: 1rem;
+  animation: up-down 2s ease-in 1s infinite alternate;
+  cursor: pointer;
+}
+
+.title {
+  font-family: var(--secundary-font-family), sans-serif;
+  color: #ffff;
+  font-size: 5.625rem;
+}
+
+.title span {
+  color: #b70956;
+  margin-left: 1.75rem;
+}
+
+.albumes {
+  display: grid;
+  background-color: #f4c8d5;
+  place-items: center;
+  padding-top: 3.5rem;
+}
+
+.the-album,
+.born-pink {
+  width: 80%;
+  max-width: 61.875rem;
+  padding: 2rem 0;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.the-album__title,
+.born-pink__title {
+  font-family: "Source Sans Pro";
+  font-size: 3.5rem;
+  color: #fbd6df;
+  margin-bottom: 1.5rem;
+}
+
+.album__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.the-album {
+  color: #ffff;
+  background-color: #221b2e;
+}
+
+.general-information {
+  text-align: left;
+  margin-left: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.subtitle--pink {
+  color: #fbd6df;
+}
+
+.album__player {
+  text-align: left;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  column-gap: 2.5rem;
+  padding: 0 2.25rem;
+}
+
+.album__player > * {
+  display: flex;
+  justify-content: space-between;
+  border: #b70956 solid 1px;
+  border-radius: 20px;
+  padding: 0.3125rem;
+  cursor: pointer;
+  color: #f4c8d5;
+  background-color: #b70956;
+  transition: all 0.5s;
+}
+
+.album__player--bp > * {
+  background-color: #221b2e;
+  border: #221b2e solid 1px;
+}
+
+.album__player > *:hover {
+  border-color: #f4c8d5;
+  background-color: #f4c8d5;
+  color: #b70956;
+}
+
+.album__player > * span {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.album__player > * img {
+  padding-left: 0.625rem;
+}
+
+.born-pink {
+  background-color: #be6981;
+  color: #e8e8e8;
+}
+
+.cover-img {
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+}
+
+.cover-img__caption {
+  padding: 0.625rem;
+}
+
+.the-album .cover-img {
+  border: #ffff solid 1px;
+  background-color: #1c1725;
+}
+
+.born-pink .cover-img {
+  background-color: #bb677f;
+  border: #fbd6df solid 1px;
+}
+
+#playing {
+  background-color: #d1bcf5;
+  border-color: #d1bcf5;
+  color: #1c1725;
+}
+
+#paused {
+  border-color: #b70956;
+  background-color: #b70956;
+  color: #f4c8d5;
+}
+
+@media screen and (min-width: 810px) {
+  .cover-img {
+    margin-right: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .main-header {
+    background-image: url(../img/BP-background1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .title {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffff;
+    font-size: 8rem;
+  }
+
+  .main-header__info p {
+    font-size: 3.625rem;
+  }
+
+  .cover-img {
+    margin-right: 5.5rem;
+  }
 }
 
+@media screen and (min-width: 1690px) {
+  .albumes {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .albumes {
+    height: 100vh;
+  }
+}
 
-
-@media screen and (min-width: 980px){
-    .main-header{ 
-        background-image: url(../img/BP-background2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-        
-    }
+@keyframes up-down {
+  100% {
+    translate: 0 -1rem;
+  }
 }

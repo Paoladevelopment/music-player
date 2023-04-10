@@ -1,69 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blackpink music player</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
-</head>
-<body>
-
-    <div class="container">
-        <header class="main-header">
-            <h1>Blackpink PARADISE</h1>
-        </header>
-        <div class="the-album">
-            <div class="the-album__info">
-                <h2>The ALBUM</h2>
-                <div class="general-information">
-                    <p>Debut studio album</p>
-                    <p>Released: October 2, 2020</p>
-                    <p> Studio: YG Entertainment and Interscope Records</p>
-                    <p> Language: Korean English Japanese</p>
-                </div>
-                <figure class="cover-img">
-                    <img src="../img/BLACKPINK-_The_Album.png" alt="">
-                    <figcaption>The album cover of the debut album of BP</figcaption>
-                </figure>
-            </div>
-
-            <ul class="the-album__player">
-                <li class="song-1"> Ice Cream</li>
-                <li class="song-2">Love To Hate Me</li>
-                <li class="song-3">You Never Know</li>
-                <li class="song-4">Lovesick Girls</li>
-                <li class="song-5">Bet You Wanna</li>
-                <li class="song-6">How You Like That</li>
-                <li class="song-7">Pretty Savage</li>
-                <li class="song-8">Crazy Over You</li>
-            </ul>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__info">
+        <h1 class="title">Black<span>pink</span></h1>
+        <p>listen</p>
+        <p>dance</p>
+        <p>discover</p>
+      </div>
+      <div class="main-header__nextsec">
+        <a href="#albumes"
+          ><img src="../img/dropdown_arroy.png" alt="dropdown dropdown_arroy" />
+        </a>
+      </div>
+    </header>
+    <div class="albumes" id="albumes">
+      <section class="the-album">
+        <h2 class="the-album__title">The album</h2>
+        <div class="album__info">
+          <div class="general-information">
+            <p>Debut studio album</p>
+            <p>
+              <span class="subtitle--pink">Released: </span> October 2, 2020
+            </p>
+            <p>
+              <span class="subtitle--pink">Studio:</span> YG Entertainment and
+              <br />
+              Interscope Records
+            </p>
+            <p>
+              <span class="subtitle--pink">Language:</span> Korean | English |
+              Japanese
+            </p>
+          </div>
+          <figure class="cover-img">
+            <img src="../img/BLACKPINK-_The_Album.png" alt="" />
+            <figcaption class="cover-img__caption">
+              The album cover of the <br />
+              debut album of BP
+            </figcaption>
+          </figure>
         </div>
 
-        <div class="born-pink">
-            <div class="born-pink__info">
-                <h2>Born pink</h2>
-                <div class="general-information">
-                    <p>2nd Studio album</p>
-                    <p>Released: September 16, 2022</p>
-                    <p> Studio: YG Entertainment and Interscope Records</p>
-                    <p> Language: Korean English</p>
-                </div>
-                <figure class="cover-img">
-                    <img src="../img/Born_Pink.jpeg" alt="">
-                    <figcaption>The album cover of born pink, album of BP</figcaption>
-                </figure>
-            </div>
-            <ul class="born-pink__player">
-                <li class="song-1"> Pink Venom</li>
-                <li class="song-2">Hard to Love</li>
-                <li class="song-3">Type Girl</li>
-                <li class="song-4">Ready For Love</li>
-                <li class="song-5">Tally</li>
-                <li class="song-6">Shut Down</li>
-                <li class="song-7">Yeah Yeah Yeah</li>
-            </ul>
+        <ul class="album__player">
+          <li data-src="../audio/IceCream.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Ice Cream</span>
+          </li>
+          <li data-src="../audio/LoveToHateMe.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Love To Hate Me</span>
+          </li>
+          <li data-src="../audio/YouNeverKnow.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>You Never Know</span>
+          </li>
+          <li data-src="../audio/LovesickGirls.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Lovesick Girls</span>
+          </li>
+          <li data-src="../audio/BetYouWanna.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Bet You Wanna</span>
+          </li>
+          <li data-src="../audio/HowYouLikeThat.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>How You Like That</span>
+          </li>
+          <li data-src="../audio/PrettySavage.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Pretty Savage</span>
+          </li>
+          <li data-src="../audio/CrazyOverYou.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Crazy Over You</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="born-pink">
+        <h2 class="born-pink__title">Born pink</h2>
+        <div class="album__info">
+          <div class="general-information">
+            <p>2nd Studio album</p>
+            <p>
+              <span class="subtitle--pink">Released:</span> September 16, 2022
+            </p>
+            <p>
+              <span class="subtitle--pink">Studio:</span> YG Entertainment and
+              <br />
+              Interscope Records
+            </p>
+            <p>
+              <span class="subtitle--pink">Language:</span> Korean | English
+            </p>
+          </div>
+          <figure class="cover-img">
+            <img src="../img/Born_Pink.jpeg" alt="" />
+            <figcaption class="cover-img__caption">
+              The album cover of born pink, <br />
+              album of BP
+            </figcaption>
+          </figure>
         </div>
+        <ul class="album__player album__player--bp">
+          <li data-src="../audio/PinkVenom.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Pink Venom</span>
+          </li>
+          <li data-src="../audio/HardToLove.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Hard to Love</span>
+          </li>
+          <li data-src="../audio/TypeGirl.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Type Girl</span>
+          </li>
+          <li data-src="../audio/ReadyForLove.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Ready For Love</span>
+          </li>
+          <li data-src="../audio/Tally.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Tally</span>
+          </li>
+          <li data-src="../audio/ShutDown.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Shut Down</span>
+          </li>
+          <li data-src="../audio/YeahYeahYeah.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>Yeah Yeah Yeah</span>
+          </li>
+          <li data-src="../audio/TheHappiestGirl.mp3">
+            <img class="play-pause-btn" src="../img/play.png" alt="play btn" />
+            <span>The Happiest Girl</span>
+          </li>
+        </ul>
+      </section>
     </div>
-</body>
+    <script src="../JSS/script.js"></script>
+  </body>
 </html>
